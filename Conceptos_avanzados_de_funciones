@@ -1,0 +1,35 @@
+Que es scope? (alcance en ingles)
+
+alcance de las variables.
+
+Local scope: El alcance de una variable dentro de una funcion, SOLO
+funciona dentro de esta misma.
+
+Global scope: Son variables que son alcanzadas por todas las funciones.
+Para esto se utilizan variables fuera de todas las funciones.
+
+------------------------------------------------------------------------
+Que son las Nested Functions? 
+
+Son funciones anidadas, una funcion dentro de otra funcion.
+
+------------------------------------------------------------------------
+
+Que son closures?
+
+Es cuando 'sacamos' y recordamos los valores de scope superiores 
+(incluso cuando estas sean eliminadas posteriormente) y las asignamos a una variable, fuera de esa funcion.
+
+ejemplo.
+
+def main():
+    a=1
+    def nested():
+        print(a)
+        return nested
+
+my_func = main()
+my_func()
+
+la variable my_func al ser asignada con el valor de nested, esta adquiere las propiedades de esta funcion
+por ende my_func es ejecutada con un parentesis como si fuera una funcion, a pesar de ser una variable.

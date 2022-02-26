@@ -1,0 +1,12 @@
+
+Python es un lenguaje interpretado, o sea que corre dentro de una Virtual Machine y permite que el mismo codigo funcione en cualquier sistema operativo.
+
+Como organizar las carpetas?
+    -> Modulos: Es un archivo de Python. Contiene codigo para reutilizar. (Funciones exportables)
+    -> Paquete: Es una carpeta que contiene modulos. __init__.py (dunder init.py) -> Denota que una carpeta es un paquete. Es importante para que python lo entienda como paquete.
+
+Que son los tipados?
+    -> Estatico: No se puede cambiar el tipo de dato de una variable en concreto, la declaramos desde el inicio. (No se ejecuta si hay algun error).
+    -> Dinamico: Las variables no tienen un tipo de dato definido.(Se ejecuta y el error salta cuando llega a la linea).
+    -> Fuerte: Los lenguajes de tipado fuerte, no permiten operar como tal "2" + 2 <- Salta un error.
+    -> Debil: Permite combinar tipos de datos distintos. 1 + "2" = 12 xd
